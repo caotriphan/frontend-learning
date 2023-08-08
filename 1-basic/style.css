@@ -3,3 +3,20 @@
   margin: 0;
   padding: 0;
 }
+
+.d-flex {
+  display: flex;
+}
+
+.gap {
+  gap: 18px;
+}
+
+.mb {
+  margin-bottom: 24px;
+}
+
+.btn {
+  aspect-ratio: 1/1;
+  min-width: 24px;
+}
