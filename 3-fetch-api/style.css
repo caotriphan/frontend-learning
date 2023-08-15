@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 10px;
+}
+
+.todo-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.description {
+  flex: 1;
+}
