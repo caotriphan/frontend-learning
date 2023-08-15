@@ -1,5 +1,15 @@
 const baseUrl = 'https://64d9d6d1e947d30a260a5be1.mockapi.io/'
 
+// Add a request interceptor
+axios.interceptors.request.use(function (config) {
+  // Do something before request is sent
+  config.headers.authorization = 'the token'
+  return config;
+}, function (error) {
+  // Do something with request error
+  return Promise.reject(error);
+});
+
 async function fetchTodoList() {
   // const resp = await fetch(baseUrl + 'v1/todos') // get request
   // const json = await resp.json();
